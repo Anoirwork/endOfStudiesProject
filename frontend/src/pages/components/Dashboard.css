@@ -1,0 +1,24 @@
+/*dashboard*/
+.leaflet-container {
+  width: calc(100vw);
+  height: 100vh;
+  z-index: 0;
+  margin-left: -3rem;
+  margin-top: -3rem;
+}
+
+/*dashboard*/
+
+/*margin-left: 250px;
+  width: 81.5%;
+  height: 500px;
+}*/
+
+@media (max-width: 768px) {
+  .leaflet-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    padding: -3rem;
+  }
+}

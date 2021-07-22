@@ -1,0 +1,17 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+<script>
+  let socket = io("http://localhost:4500");
+  let lat = 35.8254;
+  let lng = 10.637;
+  setInterval(() => {
+    let a = (lat += (Math.random() * (0.0003 - 0.0005) + 0.0004)).toFixed(4);
+    let n = (lng += (Math.random() * (0.0002 - 0.0005) + 0.0003)).toFixed(4);
+    console.log(a, n)
+    socket.emit("data", {
+      lat: a,
+      lng: n,
+      currentTime: Date.now().toString(),
+      kidNumb: "54155122",
+    });
+  }, 3000);
+</script>

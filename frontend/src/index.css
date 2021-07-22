@@ -1,0 +1,115 @@
+/*INDEX*/
+body {
+  padding: 0rem;
+  z-index: 0;
+  background: rgb(127,219,218);
+  background: linear-gradient(90deg, rgba(127,219,218,1) 0%, rgba(173,228,152,1) 100%);
+  width: 100%;
+  height: auto;
+}
+
+.darkBody {
+  padding: 0rem;
+  z-index: 0;
+  background: black;
+  color: white;
+  width: 100%;
+  height: auto;
+}
+
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.vertical-nav {
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  left: -5px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* for toggle behavior */
+
+.page-content-without-sidebar {
+  margin-left: 4rem;
+  align-content: center;
+  transition: margin 1s;
+}
+.page-content-with-sidebar {
+  margin-left: 15rem;
+  z-index: 0;
+  padding: 3rem !important;
+  transition: margin 0.8s;
+}
+.separator {
+  margin: 3rem 0;
+  border-bottom: 1px dashed #fff;
+}
+
+.text-uppercase {
+  letter-spacing: 0.1em;
+}
+
+.text-gray {
+  color: #aaa;
+}
+.segementLogin {
+  width: 50rem;
+  margin-top: 10rem;
+  margin-left: 17rem;
+  margin-right: auto;
+  padding: 3rem;
+}
+@media (max-width: 768px) {
+  .vertical-nav {
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    left: -5px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  body {
+    padding: 0rem;
+    background: #f4f6f9;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .ui pointing secondary menu {
+    display: none !important;
+  }
+  .page-content-without-sidebar {
+    padding-left: 1rem;
+  }
+  .page-content-with-sidebar {
+
+    padding-left: 1rem;
+    z-index: 0;
+  }
+  .segementLogin {
+    width: 70%;
+    margin-top: 2rem;
+  }
+  .register {
+    width: 100% !important;
+  }
+  .navBar {
+    top: 0;
+  }
+}
+.buttonMoghot {
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  color: #069;
+}
+.register {
+  width: 100%;
+
+  padding: 3rem !important;
+}
+
+.ui.secondary.pointing.menu .item {
+  margin: initial !important;
+}

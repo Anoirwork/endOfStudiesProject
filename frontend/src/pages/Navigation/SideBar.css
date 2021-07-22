@@ -1,0 +1,64 @@
+.buttonMoghot {
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: #069;
+}
+.sidebar {
+  background-color: black;
+  width: 150px;
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  bottom: 0;
+}
+
+.sidebar h1 {
+  color: white;
+}
+
+.portfolio {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 150px;
+  right: 0;
+  bottom: 0;
+
+  -moz-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input:checked ~ .portfolio {
+  left: 0;
+}
+
+input:checked ~ label {
+  left: 0;
+}
+
+label {
+  position: absolute;
+  top: 0;
+  left: 150px;
+  background-color: #1abc9c;
+  color: #fff;
+  padding: 10px;
+  -moz-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
+label:hover {
+  cursor: pointer;
+}
+
+.toggle {
+  margin-right: 17rem;
+  top: 0;
+}
